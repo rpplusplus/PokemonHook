@@ -1,0 +1,332 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		AD779A9E1D2F2A330043F11C /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AD779A9D1D2F2A330043F11C /* Foundation.framework */; };
+		AD779AA81D2F2A350043F11C /* LocationFaker.mm in Sources */ = {isa = PBXBuildFile; fileRef = AD779AA71D2F2A350043F11C /* LocationFaker.mm */; };
+		AD779AB31D2F2B2F0043F11C /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AD779AB21D2F2B2F0043F11C /* CoreLocation.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		AD779A9A1D2F2A330043F11C /* LocationFaker.dylib */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.dylib"; includeInIndex = 0; path = LocationFaker.dylib; sourceTree = BUILT_PRODUCTS_DIR; };
+		AD779A9D1D2F2A330043F11C /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		AD779AA21D2F2A330043F11C /* control.txt */ = {isa = PBXFileReference; lastKnownFileType = text; name = control.txt; path = Package/DEBIAN/control.txt; sourceTree = "<group>"; };
+		AD779AA31D2F2A330043F11C /* control */ = {isa = PBXFileReference; lastKnownFileType = text; name = control; path = Package/DEBIAN/control; sourceTree = "<group>"; };
+		AD779AA51D2F2A330043F11C /* PackageVersion.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = PackageVersion.plist; sourceTree = "<group>"; };
+		AD779AA61D2F2A330043F11C /* LocationFaker-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "LocationFaker-Prefix.pch"; sourceTree = "<group>"; };
+		AD779AA71D2F2A350043F11C /* LocationFaker.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = LocationFaker.mm; sourceTree = "<group>"; };
+		AD779AAC1D2F2A350043F11C /* LocationFaker.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = LocationFaker.plist; path = Package/Library/MobileSubstrate/DynamicLibraries/LocationFaker.plist; sourceTree = "<group>"; };
+		AD779AB21D2F2B2F0043F11C /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		AD779A961D2F2A330043F11C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AD779AB31D2F2B2F0043F11C /* CoreLocation.framework in Frameworks */,
+				AD779A9E1D2F2A330043F11C /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		AD779A901D2F2A330043F11C = {
+			isa = PBXGroup;
+			children = (
+				AD779A9F1D2F2A330043F11C /* LocationFaker */,
+				AD779A9C1D2F2A330043F11C /* Frameworks */,
+				AD779A9B1D2F2A330043F11C /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		AD779A9B1D2F2A330043F11C /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				AD779A9A1D2F2A330043F11C /* LocationFaker.dylib */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		AD779A9C1D2F2A330043F11C /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				AD779AB21D2F2B2F0043F11C /* CoreLocation.framework */,
+				AD779A9D1D2F2A330043F11C /* Foundation.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		AD779A9F1D2F2A330043F11C /* LocationFaker */ = {
+			isa = PBXGroup;
+			children = (
+				AD779AA71D2F2A350043F11C /* LocationFaker.mm */,
+				AD779AA01D2F2A330043F11C /* Package */,
+				AD779AA41D2F2A330043F11C /* Supporting Files */,
+			);
+			path = LocationFaker;
+			sourceTree = "<group>";
+		};
+		AD779AA01D2F2A330043F11C /* Package */ = {
+			isa = PBXGroup;
+			children = (
+				AD779AA11D2F2A330043F11C /* DEBIAN */,
+				AD779AA91D2F2A350043F11C /* Library */,
+			);
+			name = Package;
+			sourceTree = "<group>";
+		};
+		AD779AA11D2F2A330043F11C /* DEBIAN */ = {
+			isa = PBXGroup;
+			children = (
+				AD779AA21D2F2A330043F11C /* control.txt */,
+				AD779AA31D2F2A330043F11C /* control */,
+			);
+			name = DEBIAN;
+			sourceTree = "<group>";
+		};
+		AD779AA41D2F2A330043F11C /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				AD779AA51D2F2A330043F11C /* PackageVersion.plist */,
+				AD779AA61D2F2A330043F11C /* LocationFaker-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		AD779AA91D2F2A350043F11C /* Library */ = {
+			isa = PBXGroup;
+			children = (
+				AD779AAA1D2F2A350043F11C /* MobileSubstrate */,
+			);
+			name = Library;
+			sourceTree = "<group>";
+		};
+		AD779AAA1D2F2A350043F11C /* MobileSubstrate */ = {
+			isa = PBXGroup;
+			children = (
+				AD779AAB1D2F2A350043F11C /* DynamicLibraries */,
+			);
+			name = MobileSubstrate;
+			sourceTree = "<group>";
+		};
+		AD779AAB1D2F2A350043F11C /* DynamicLibraries */ = {
+			isa = PBXGroup;
+			children = (
+				AD779AAC1D2F2A350043F11C /* LocationFaker.plist */,
+			);
+			name = DynamicLibraries;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		AD779A971D2F2A330043F11C /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		AD779A991D2F2A330043F11C /* LocationFaker */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = AD779AAF1D2F2A350043F11C /* Build configuration list for PBXNativeTarget "LocationFaker" */;
+			buildPhases = (
+				AD779A951D2F2A330043F11C /* Sources */,
+				AD779A961D2F2A330043F11C /* Frameworks */,
+				AD779A971D2F2A330043F11C /* Headers */,
+				AD779A981D2F2A330043F11C /* ShellScript */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = LocationFaker;
+			productName = LocationFaker;
+			productReference = AD779A9A1D2F2A330043F11C /* LocationFaker.dylib */;
+			productType = "com.apple.product-type.library.dynamic";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		AD779A911D2F2A330043F11C /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0730;
+				TargetAttributes = {
+					AD779A991D2F2A330043F11C = {
+						CreatedOnToolsVersion = 7.3.1;
+					};
+				};
+			};
+			buildConfigurationList = AD779A941D2F2A330043F11C /* Build configuration list for PBXProject "LocationFaker" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = AD779A901D2F2A330043F11C;
+			productRefGroup = AD779A9B1D2F2A330043F11C /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				AD779A991D2F2A330043F11C /* LocationFaker */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		AD779A981D2F2A330043F11C /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "/opt/iOSOpenDev/bin/iosod --xcbp";
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		AD779A951D2F2A330043F11C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AD779AA81D2F2A350043F11C /* LocationFaker.mm in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		AD779AAD1D2F2A350043F11C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COPY_PHASE_STRIP = NO;
+				EXCLUDED_RECURSIVE_SEARCH_PATH_SUBDIRECTORIES = "*.nib *.lproj *.gch (*) .DS_Store CVS .svn .git .hg *.xcodeproj *.xcode *.pbproj *.pbxproj";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(iOSOpenDevPath)/frameworks/**",
+					"$(SDKROOT)/System/Library/PrivateFrameworks",
+				);
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				HEADER_SEARCH_PATHS = "$(iOSOpenDevPath)/include/**";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				LIBRARY_SEARCH_PATHS = "$(iOSOpenDevPath)/lib/**";
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = NO;
+				iOSOpenDevPath = /opt/iOSOpenDev;
+			};
+			name = Debug;
+		};
+		AD779AAE1D2F2A350043F11C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COPY_PHASE_STRIP = YES;
+				EXCLUDED_RECURSIVE_SEARCH_PATH_SUBDIRECTORIES = "*.nib *.lproj *.gch (*) .DS_Store CVS .svn .git .hg *.xcodeproj *.xcode *.pbproj *.pbxproj";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(iOSOpenDevPath)/frameworks/**",
+					"$(SDKROOT)/System/Library/PrivateFrameworks",
+				);
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				HEADER_SEARCH_PATHS = "$(iOSOpenDevPath)/include/**";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				LIBRARY_SEARCH_PATHS = "$(iOSOpenDevPath)/lib/**";
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				iOSOpenDevPath = /opt/iOSOpenDev;
+			};
+			name = Release;
+		};
+		AD779AB01D2F2A350043F11C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "Developer ID Application: TieTie Inc. (D62JMM68M4)";
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "LocationFaker/LocationFaker-Prefix.pch";
+				INSTALL_PATH = /Library/MobileSubstrate/DynamicLibraries;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				iOSOpenDevBuildPackageOnAnyBuild = NO;
+				iOSOpenDevCopyOnBuild = NO;
+				iOSOpenDevDevice = "";
+				iOSOpenDevInstallOnAnyBuild = NO;
+				iOSOpenDevInstallOnProfiling = YES;
+				iOSOpenDevRespringOnInstall = YES;
+				iOSOpenDevUsePackageVersionPList = YES;
+			};
+			name = Debug;
+		};
+		AD779AB11D2F2A350043F11C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "Developer ID Application: TieTie Inc. (D62JMM68M4)";
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "LocationFaker/LocationFaker-Prefix.pch";
+				INSTALL_PATH = /Library/MobileSubstrate/DynamicLibraries;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				iOSOpenDevBuildPackageOnAnyBuild = NO;
+				iOSOpenDevCopyOnBuild = NO;
+				iOSOpenDevDevice = "";
+				iOSOpenDevInstallOnAnyBuild = NO;
+				iOSOpenDevInstallOnProfiling = YES;
+				iOSOpenDevRespringOnInstall = YES;
+				iOSOpenDevUsePackageVersionPList = YES;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		AD779A941D2F2A330043F11C /* Build configuration list for PBXProject "LocationFaker" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AD779AAD1D2F2A350043F11C /* Debug */,
+				AD779AAE1D2F2A350043F11C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		AD779AAF1D2F2A350043F11C /* Build configuration list for PBXNativeTarget "LocationFaker" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AD779AB01D2F2A350043F11C /* Debug */,
+				AD779AB11D2F2A350043F11C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = AD779A911D2F2A330043F11C /* Project object */;
+}
