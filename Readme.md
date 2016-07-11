@@ -10,7 +10,7 @@ __文章推出收到了 Ingress 的玩家炮轰，本身我就是技术交流的
 - __不需要打开 Xcode 工程__
 - 把我提供的 zip 中 libLocationFaker 用 codesign 重新签名
 - 把 .app 放到 Payload 文件夹，压缩成 .ipa
-- 用 codesign / fastlane / iresign 等工具重新签名
+- 用 codesign / fastlane / iresign 等工具重新签名 __注意:如果证书的 BundleID 不是 *, 需要修改 `Info.plist` 中的 BundleID__
 - iTunes / iTools / Xcode 安装 ipa，推荐用 Xcode 安装，大多数安装失败会提示原因。
 
 ## 自定义 Tweak
