@@ -25,7 +25,8 @@ __文章推出收到了 Ingress 的玩家炮轰，本身我就是技术交流的
 
 ## 32bit CPU
 - 找一台 32位 越狱机器，没有请先越狱
-- 如果越狱机是 iOS 9，请先去 PC 上的 iTunes 下载完整包，把里面的 `info.plist` 拿出来覆盖，或者用 `iTunes` 安装 
+- 如果越狱机是 iOS 9，请先去 PC 上的 iTunes 下载完整包，把里面的 `info.plist` 拿出来覆盖，或者砸壳的时候使用 `iTunes` 安装进来的。原因是 Info.plist 会被 App Slicing 插入很多限制性的key，例如只能 iPad 运行什么的。
 - `ssh` 进去，用 `Clutch` 进行砸壳，推荐从 [Github](https://github.com/KJCracks/Clutch/releases) 上下载编译好的最新版然后扔进 `iPhone` 的 `/usr/bin`
 - `scp` 拿出来砸过壳的包
+-  对 `.app` 中的二进制提权限: `chmod 777 pokemongo`
 - GOTO `自定义 Tweak`
