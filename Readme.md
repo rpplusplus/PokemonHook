@@ -5,7 +5,7 @@ __文章推出收到了 Ingress 的玩家炮轰，本身我就是技术交流的
 向我反馈不会签名的人实在是太多，真不知道怎么当的 iOS 开发者，连自己 app 签名过程都不了解。
 我这里写一下这个 Repo 的使用方式。
 
-#### 已更新 7-12 的新版本脱壳 ipa。请无视我上一条 commit 把 clutch 拼成了 class...
+#### 已更新 7-13 的新版本脱壳 ipa, 0.29.2。并支持了 armv7 指令集
 
 ## 自签名的过程：
 
@@ -23,8 +23,8 @@ __文章推出收到了 Ingress 的玩家炮轰，本身我就是技术交流的
 - 执行 yolo pokemango libXXXX.dylib 如果叫做 LocationFaker.dylib 可以跳过
 - GOTO `自签名过程`
 
-## 32bit CPU
-- 找一台 32位 越狱机器，没有请先越狱
+## 从砸壳开始
+- 找一台越狱机器，没有请先越狱
 - 如果越狱机是 iOS 9，请先去 PC 上的 iTunes 下载完整包，把里面的 `info.plist` 拿出来覆盖，或者砸壳的时候使用 `iTunes` 安装进来的。原因是 Info.plist 会被 App Slicing 插入很多限制性的key，例如只能 iPad 运行什么的。
 - `ssh` 进去，用 `Clutch` 进行砸壳，推荐从 [Github](https://github.com/KJCracks/Clutch/releases) 上下载编译好的最新版然后扔进 `iPhone` 的 `/usr/bin`
 - `scp` 拿出来砸过壳的包
